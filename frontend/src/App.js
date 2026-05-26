@@ -1,7 +1,7 @@
 import React,{useEffect,useMemo,useState} from 'react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api/expenses';
+const API_URL = process.env.REACT_APP_API_URL || '/api/expenses';
 const CATEGORIES = ['Food','Transport','Shopping','Bills','Health','Entertainment','Travel','Education','Other'];
 
 function buildTips(expenses,total){
